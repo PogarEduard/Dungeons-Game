@@ -8,13 +8,16 @@ class Dungeon {
   final Color dungeonColors;
   final imageBackground;
   final textColor;
+  final fightScreen;
 
-  Dungeon(
-      {required this.id,
-      required this.dungeonName,
-      required this.imageBackground,
-      required this.dungeonColors,
-      this.textColor});
+  Dungeon({
+    required this.id,
+    required this.dungeonName,
+    required this.imageBackground,
+    required this.dungeonColors,
+    this.textColor,
+    this.fightScreen,
+  });
 }
 
 List<Dungeon> Dungeons = [
